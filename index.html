@@ -113,13 +113,14 @@ nav.solid{background:rgba(255,255,255,.94);backdrop-filter:blur(12px);-webkit-ba
 .faixas{max-width:1000px;margin:clamp(60px,6vw,96px) auto 0;display:grid;gap:26px}
 .faixa{position:relative;height:clamp(190px,17vw,250px);overflow:hidden;display:flex;align-items:center;justify-content:flex-start;padding-left:11%;color:#fff;background:var(--fundo)}
 .faixa img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.faixa::after{content:"";position:absolute;inset:0;background:rgba(6,34,52,.22);transition:background .4s}
+.faixa::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,34,52,.62),rgba(6,34,52,.15));transition:background .4s}
 .faixa:hover::after{background:rgba(6,34,52,.4)}
-.faixa .mk{position:relative;z-index:2;text-align:right;line-height:1}
-.faixa .mk b{display:block;font-weight:600;font-size:clamp(30px,3.4vw,48px);text-shadow:0 3px 24px rgba(4,30,50,.5)}
+.faixa .mk{position:relative;z-index:2;text-align:left;line-height:1.1;max-width:62%}
+.faixa .mk em{display:block;margin-top:10px;font-style:normal;font-weight:500;font-size:clamp(14px,1.25vw,17px);line-height:1.4;opacity:.95;text-shadow:0 2px 14px rgba(4,30,50,.6)}
+.faixa .mk b{display:block;margin-top:8px;font-weight:700;font-size:clamp(22px,2.2vw,32px);text-shadow:0 3px 24px rgba(4,30,50,.5)}
 .faixa .mk small{font-size:clamp(11px,1.1vw,15px);font-weight:700;letter-spacing:.16em}
 .faixa:nth-child(1) .mk small{color:#ffd24a}.faixa:nth-child(2) .mk small{color:#ff5a72}
-.faixa .ir{position:absolute;z-index:2;right:20px;bottom:16px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.faixa .ir{position:absolute;z-index:2;right:22px;bottom:20px;padding:12px 18px;background:#fff;color:#0b3550;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 
 /* FINAL + RODAPÉ */
 .final{position:relative;z-index:6;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;background:var(--rod);color:#fff}
@@ -162,7 +163,7 @@ footer .c{text-align:center}footer .d{text-align:right}
   .res-t{max-width:none;padding:0 22px;margin-top:-14px}
   .passos{text-align:left}
   .deps{grid-template-columns:1fr;max-width:440px}
-  .faixa{height:170px}
+  .faixa{height:auto;min-height:250px;padding:26px 22px 84px;align-items:flex-start}.faixa .mk{max-width:100%}.faixa .ir{left:22px;right:auto}
   .final-t{padding-top:110px}
   footer{grid-template-columns:1fr;text-align:center;gap:26px}
   footer .logo{align-items:center}footer .d{text-align:center}
@@ -215,11 +216,11 @@ footer .c{text-align:center}footer .d{text-align:right}
 <section id="destinos">
   <div class="tit dest-t"><span class="n">02</span><h2 class="split">Pra onde a gente te leva</h2></div>
   <div class="painel"><img src="assets/04-maragogi.jpg" alt="Piscinas naturais de Maragogi">
-    <div><small>Litoral norte · 2h30 de Maceió</small><h3>Maragogi</h3><p>As piscinas naturais mais famosas do Brasil. Saindo cedo, você chega na maré baixa.</p><a class="btn" href="https://wa.me/5582996673685"><svg><use href="#wa"/></svg>Cotar transfer pra Maragogi</a></div></div>
+    <div><small>Litoral norte · 2h30 de Maceió</small><h3>Maragogi</h3><p>As piscinas naturais mais famosas do Brasil. Saindo cedo, você chega na maré baixa.</p><a class="btn" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20cotar%20um%20transfer%20pra%20Maragogi."><svg><use href="#wa"/></svg>Cotar transfer pra Maragogi</a></div></div>
   <div class="painel"><img src="assets/05-milagres.jpg" alt="Praia de São Miguel dos Milagres">
-    <div><small>Rota Ecológica · 1h50 de Maceió</small><h3>São Miguel dos Milagres</h3><p>Coqueiral sem fim, mar parado e as pousadas mais charmosas do Nordeste.</p><a class="btn" href="https://wa.me/5582996673685"><svg><use href="#wa"/></svg>Cotar transfer pra Milagres</a></div></div>
+    <div><small>Rota Ecológica · 1h50 de Maceió</small><h3>São Miguel dos Milagres</h3><p>Coqueiral sem fim, mar parado e as pousadas mais charmosas do Nordeste.</p><a class="btn" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20cotar%20um%20transfer%20pra%20S%C3%A3o%20Miguel%20dos%20Milagres."><svg><use href="#wa"/></svg>Cotar transfer pra Milagres</a></div></div>
   <div class="painel"><img src="assets/06-gunga.jpg" alt="Praia do Gunga">
-    <div><small>Litoral sul · 50 min de Maceió</small><h3>Praia do Gunga</h3><p>Falésias coloridas de um lado, lagoa do outro. Passeio de dia inteiro, com parada no Francês.</p><a class="btn" href="https://wa.me/5582996673685"><svg><use href="#wa"/></svg>Cotar passeio pro Gunga</a></div></div>
+    <div><small>Litoral sul · 50 min de Maceió</small><h3>Praia do Gunga</h3><p>Falésias coloridas de um lado, lagoa do outro. Passeio de dia inteiro, com parada no Francês.</p><a class="btn" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20cotar%20o%20passeio%20pra%20Praia%20do%20Gunga."><svg><use href="#wa"/></svg>Cotar passeio pro Gunga</a></div></div>
 </section>
 
 <!-- 03 -->
@@ -233,28 +234,28 @@ footer .c{text-align:center}footer .d{text-align:right}
       <li><b>02</b><span>Recebe a cotação<em>Certinho pro seu trajeto e pro seu grupo.</em></span></li>
       <li><b>03</b><span>Desembarca e entra no carro<em>O motorista já está te esperando.</em></span></li>
     </ul>
-    <a class="btn fade" href="https://wa.me/5582996673685"><svg><use href="#wa"/></svg>Fazer minha cotação</a>
+    <a class="btn fade" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o%20de%20transfer.%20Meu%20voo%20chega%20no%20dia%20___%20e%20vou%20ficar%20no%20hotel%20___."><svg><use href="#wa"/></svg>Fazer minha cotação</a>
   </div>
 </section>
 
 <!-- 04 -->
+<section class="pas" id="passeios">
+  <div class="tit"><span class="n">03</span><h2 class="split">Do que você precisa?</h2></div>
+  <div class="faixas">
+    <a class="faixa fade" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20saber%20dos%20passeios%20privativos."><img src="assets/09-lancha.jpg" alt="Passeio de lancha no mar de Alagoas" style="object-position:50% 80%"><span class="mk"><small>PASSEIOS PRIVATIVOS</small><b>Conheça Alagoas no seu ritmo</b><em>Maragogi, Milagres, Gunga e mais, só com o seu grupo.</em></span><span class="ir">Quero um passeio →</span></a>
+    <a class="faixa fade" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20cotar%20um%20transfer%20do%20aeroporto%20pro%20meu%20hotel."><img src="assets/07-aeroporto-mcz.jpg" alt="Aeroporto Internacional Zumbi dos Palmares, em Maceió" style="object-position:50% 45%;filter:brightness(.62) saturate(1.05)"><span class="mk"><small>TRANSFER DO AEROPORTO</small><b>Do desembarque direto pro hotel</b><em>Te esperamos no Zumbi dos Palmares com o seu nome na placa.</em></span><span class="ir">Quero o transfer →</span></a>
+  </div>
+</section>
+
+<!-- 05 -->
 <section class="aval" id="avaliacoes">
-  <div class="tit"><span class="n">03</span><h2 class="split">Quem já viajou com a gente</h2></div>
+  <div class="tit"><span class="n">04</span><h2 class="split">Quem já viajou com a gente</h2></div>
   <div class="nota fade"><svg><use href="#g"/></svg><b>5,0</b><span><span class="est">★★★★★</span>196 avaliações no Google</span></div>
   <div class="gente"><img class="fade" src="assets/c1.jpg" alt=""><img class="fade" src="assets/c6.jpg" alt=""><img class="fade" src="assets/c12.jpg" alt=""><img class="fade" src="assets/c10.jpg" alt=""></div>
   <div class="deps">
     <article class="dep fade"><div class="dep-top"><span class="av" style="background:#2b7bb9">G</span><span><b>Gabriela G.</b><small>há 1 mês</small></span><svg><use href="#g"/></svg></div><span class="est">★★★★★</span><p>Motorista pontual, educado e muito cuidadoso durante todo o trajeto. O carro estava impecável. Em uma próxima viagem, vamos contratar de novo.</p></article>
     <article class="dep fade"><div class="dep-top"><span class="av" style="background:#d8344f">F</span><span><b>Fernando D.</b><small>há 3 meses</small></span><svg><use href="#g"/></svg></div><span class="est">★★★★★</span><p>Viajamos com duas crianças pequenas e reservamos só um dia antes. Mesmo assim fomos muito bem atendidos, do aeroporto até o hotel.</p></article>
     <article class="dep fade"><div class="dep-top"><span class="av" style="background:#0b3550">A</span><span><b>Alana L.</b><small>há 4 semanas</small></span><svg><use href="#g"/></svg></div><span class="est">★★★★★</span><p>A programação foi perfeita e aproveitamos cada momento da viagem. Começou como guia e terminou como amigo.</p></article>
-  </div>
-</section>
-
-<!-- 05 -->
-<section class="pas" id="passeios">
-  <div class="tit"><span class="n">04</span><h2 class="split">Conheça também</h2></div>
-  <div class="faixas">
-    <a class="faixa fade" href="https://wa.me/5582996673685"><img src="assets/09-lancha.jpg" alt="Passeio de lancha" style="object-position:50% 80%"><span class="mk"><b>mcz</b><small>PASSEIOS</small></span><span class="ir">Cotar passeio privativo →</span></a>
-    <a class="faixa fade" href="https://wa.me/5582996673685"><img src="assets/07-aeroporto-mcz.jpg" alt="Aeroporto Internacional Zumbi dos Palmares, em Maceió" style="object-position:50% 45%;filter:brightness(.62) saturate(1.05)"><span class="mk"><b>mcz</b><small>AEROPORTO</small></span><span class="ir">Cotar transfer do aeroporto →</span></a>
   </div>
 </section>
 
@@ -265,7 +266,7 @@ footer .c{text-align:center}footer .d{text-align:right}
     <span class="k fade">Alta temporada</span>
     <h2 class="split">Fim de ano em Alagoas?</h2>
     <p class="fade">Dezembro e janeiro lotam rápido. Garanta seu transfer antes de embarcar.</p>
-    <a class="btn fade" href="https://wa.me/5582996673685"><svg><use href="#wa"/></svg>Reservar pelo WhatsApp</a>
+    <a class="btn fade" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20reservar%20meu%20transfer%20pro%20fim%20de%20ano."><svg><use href="#wa"/></svg>Reservar pelo WhatsApp</a>
   </div>
   <footer>
     <div><a class="logo mcz" href="#topo"><img src="assets/logo-mcz-branca.png" alt="MCZ Transfer"><span class="lt"><b>MCZ Transfer</b><small>MACEIÓ · ALAGOAS</small></span></a><p>Transfers e passeios privativos em Alagoas. Do aeroporto de Maceió aos hotéis e resorts de todo o litoral.</p></div>
@@ -274,7 +275,7 @@ footer .c{text-align:center}footer .d{text-align:right}
   </footer>
 </section>
 
-<a class="zap" href="https://wa.me/5582996673685" aria-label="WhatsApp"><svg><use href="#wa"/></svg></a>
+<a class="zap" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MCZ%20Transfer%20e%20queria%20tirar%20uma%20d%C3%BAvida." aria-label="WhatsApp"><svg><use href="#wa"/></svg></a>
 
 <script src="vendor/gsap.min.js"></script>
 <script src="vendor/ScrollTrigger.min.js"></script>
