@@ -177,6 +177,23 @@ footer .c{text-align:center}footer .d{text-align:right}
 .gente{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.4vw,20px);max-width:1120px;margin:clamp(40px,4vw,64px) auto 0}
 .gente img{width:100%;aspect-ratio:4/5;object-fit:cover}
 @media (max-width:900px){.gente{grid-template-columns:repeat(2,1fr);max-width:440px}}
+
+/* RESORTS */
+.rst{position:relative;z-index:6;background:var(--bg);padding:clamp(100px,11vw,170px) 24px clamp(40px,4vw,60px)}
+.rgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,1.6vw,22px);max-width:1120px;margin:clamp(50px,5vw,80px) auto 0}
+.rcard{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--fundo);color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:22px 20px}
+.rcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.rcard::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,34,52,.92) 0%,rgba(6,34,52,.6) 40%,rgba(6,34,52,0) 72%);transition:background .4s}
+.rcard:hover::after{background:linear-gradient(0deg,rgba(6,34,52,.92) 0%,rgba(6,34,52,.5) 55%,rgba(6,34,52,.1) 100%)}
+.rcard>span{position:relative;z-index:2;display:block}
+.rcard small{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#ffd24a;text-shadow:0 1px 8px rgba(4,30,50,.6)}
+.rcard b{display:block;font-family:"YS",serif;font-weight:400;font-size:clamp(22px,1.9vw,28px);line-height:1.15;margin-top:6px}
+.rcard em{display:inline-block;font-style:normal;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-top:14px;padding-bottom:3px;border-bottom:1px solid rgba(255,255,255,.6)}
+.rcard.cta{background:var(--azul);justify-content:center;text-align:left}
+.rcard.cta::after{display:none}
+.rcard.cta b{font-size:clamp(24px,2.1vw,31px)}
+.rcard.cta p{position:relative;z-index:2;font-size:14px;line-height:1.55;opacity:.92;margin-top:12px}
+@media (max-width:900px){.rgrid{grid-template-columns:repeat(2,1fr);max-width:480px;gap:10px}.rcard{padding:16px 14px}.rcard b{font-size:20px}.rcard small{font-size:9px;letter-spacing:.14em}.rcard em{font-size:10px;margin-top:10px}.rcard:first-child{grid-column:1/-1;aspect-ratio:16/11}.rcard.cta{grid-column:1/-1;aspect-ratio:auto;padding:28px 24px}.rcard.cta b{font-size:24px}.rcard.cta p{font-size:14px}}
 </style>
 </head>
 <body>
@@ -247,9 +264,15 @@ footer .c{text-align:center}footer .d{text-align:right}
   </div>
 </section>
 
+<!-- RESORTS -->
+<section class="rst" id="resorts">
+  <div class="tit"><span class="n">04</span><h2 class="split">Os resorts que a gente atende</h2><p class="fade">Do desembarque no Zumbi dos Palmares direto pra recepção do seu resort, no carro só do seu grupo.</p></div>
+  <div class="rgrid"><a class="rcard fade" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20cotar%20um%20transfer%20do%20aeroporto%20pro%20Vila%20Gal%C3%A9%20Alagoas."><img src="assets/rs-vilagale.jpg" alt="Vila Galé Alagoas" loading="lazy"><span><small>Barra de Santo Antônio</small><b>Vila Galé Alagoas</b><em>Cotar transfer →</em></span></a><a class="rcard fade" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20cotar%20um%20transfer%20do%20aeroporto%20pro%20Salinas%20Maragogi."><img src="assets/rs-salmaragogi.jpg" alt="Salinas Maragogi" loading="lazy"><span><small>Maragogi</small><b>Salinas Maragogi</b><em>Cotar transfer →</em></span></a><a class="rcard fade" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20cotar%20um%20transfer%20do%20aeroporto%20pro%20Grand%20Oca%20Maragogi."><img src="assets/rs-grandoca.jpg" alt="Grand Oca Maragogi" loading="lazy"><span><small>Maragogi</small><b>Grand Oca Maragogi</b><em>Cotar transfer →</em></span></a><a class="rcard fade" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20cotar%20um%20transfer%20do%20aeroporto%20pro%20Japaratinga%20Lounge%20Resort."><img src="assets/rs-japaratinga.jpg" alt="Japaratinga Lounge" loading="lazy"><span><small>Japaratinga</small><b>Japaratinga Lounge</b><em>Cotar transfer →</em></span></a><a class="rcard fade" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20cotar%20um%20transfer%20do%20aeroporto%20pro%20Macei%C3%B3%20Mar%20Resort."><img src="assets/rs-maceiomar.jpg" alt="Maceió Mar Resort" loading="lazy"><span><small>Ipioca · Maceió</small><b>Maceió Mar Resort</b><em>Cotar transfer →</em></span></a><a class="rcard fade" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20cotar%20um%20transfer%20do%20aeroporto%20pro%20Salinas%20Macei%C3%B3."><img src="assets/rs-salmaceio.jpg" alt="Salinas Maceió" loading="lazy"><span><small>Ipioca · Maceió</small><b>Salinas Maceió</b><em>Cotar transfer →</em></span></a><a class="rcard fade" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20cotar%20um%20transfer%20do%20aeroporto%20pro%20Ipioca%20Beach%20Resort."><img src="assets/rs-ipioca.jpg" alt="Ipioca Beach Resort" loading="lazy"><span><small>Ipioca · Maceió</small><b>Ipioca Beach Resort</b><em>Cotar transfer →</em></span></a><a class="rcard cta fade" href="https://wa.me/5582996673685?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20cotar%20um%20transfer%20do%20aeroporto%20pro%20meu%20hotel%2C%20que%20%C3%A9%20o%20___."><span><small style="color:#fff">Outro hotel?</small><b>Seu hotel não tá na lista?</b></span><p>A gente leva pra qualquer hotel ou pousada do litoral de Alagoas.</p><span><em>Chamar no WhatsApp →</em></span></a></div>
+</section>
+
 <!-- 05 -->
 <section class="aval" id="avaliacoes">
-  <div class="tit"><span class="n">04</span><h2 class="split">Quem já viajou com a gente</h2></div>
+  <div class="tit"><span class="n">05</span><h2 class="split">Quem já viajou com a gente</h2></div>
   <div class="nota fade"><svg><use href="#g"/></svg><b>5,0</b><span><span class="est">★★★★★</span>196 avaliações no Google</span></div>
   <div class="gente"><img class="fade" src="assets/c1.jpg" alt=""><img class="fade" src="assets/c6.jpg" alt=""><img class="fade" src="assets/c12.jpg" alt=""><img class="fade" src="assets/c10.jpg" alt=""></div>
   <div class="deps">
